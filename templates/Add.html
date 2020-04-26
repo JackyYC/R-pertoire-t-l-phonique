@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Répertoire Téléphonique</title>
-    <link href="C:\Users\Megaport\Desktop\Reposit\Répertoire Téléphonique\static\style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Répertoire Téléphonique</h1>
-    <h2>Ajouter un numéro</h2>
-    <form action="/action_page.php">
-  <label for="name">Nom :</label>
-  <input type="text" id="name" name="name"><br><br>
-  <label for="number">Numéro Téléphonique :</label>
-  <input type="text" id="number" name="number"><br><br>
-  <input type="submit" value="Submit">
-</form>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Répertoire Téléphonique</title>
+	<link href="../static/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>Répertoire Téléphonique</h1>
+	<h2>Ajouter un numéro</h2>
+	<form action="http://localhost:5000/EndAdd" method="post" enctype="multipart/form-data">
+		<label for="name">Nom :</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="number">Numéro Téléphonique :</label>
+      <input type="text" id="number" name="number"><br><br>
+      <input type="submit" value="Submit">
+	</form>
+	<p><br><br><a href="http://localhost:5000/">Retour au menu principale</a></p>
   </body>
 </html>
